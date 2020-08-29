@@ -103,8 +103,17 @@ p {
 }
 
 .insta-stats {
-    border-top: 5px solid;
-    border-image:  linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    position: relative;
+}
+
+.border-top-bg {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 5px;
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    position: absolute;
+    top: 0;
 }
 
 .yt-stats {
@@ -175,7 +184,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 75%;
     color: hsl(0, 0%, 100%);
 }
 
@@ -218,4 +227,52 @@ p {
 .toggle-slider {
     left: 28px;
     background-color: hsl(0, 0%, 100%);
+}
+
+/* Mobile CSS */
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        height: auto;
+    }
+
+    .dashboard {
+        width: 90%;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+    }
+
+    .heading {
+        border-bottom: 1px solid hsl(228, 28%, 20%);
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .toggle-mode {
+        width: 90%; 
+        justify-content: space-between;
+    }
+
+    .grid-view {
+        grid-template-columns: auto;
+        place-items: center;
+    }
+
+    .grid-item-view {
+        width: 90%;
+    }
+
+    .overview {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        margin-left: 15px;
+    }
 }
