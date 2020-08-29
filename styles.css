@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsl(228, 34%, 66%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter';
+    height: 100vh;
+    background-color: hsl(230, 17%, 14%);
+    position: relative;
+}
+
+.background-top {
+    position: absolute;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.heading > h1 {
+    margin-bottom: 1px;
+}
+
+.heading > p {
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.dashboard-stats-item {
+    height: 210px;
+    width: 210px;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fb-stats {
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.twitter-stats {
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.insta-stats {
+    border-top: 5px solid;
+    border-image:  linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.yt-stats {
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 700;
+}
+
+.user-info > p {
+    margin-left: 10px;
+}
+
+.user-followers > p {
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.user-followers > p:first-child {
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.user-followers > p:last-child {
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.user-daily-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.success {
+    color: hsl(163, 72%, 41%);
+}
+
+.error {
+    color: hsl(356, 69%, 56%);
+}
+
+.user-daily-stats > p {
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
