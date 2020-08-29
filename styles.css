@@ -41,12 +41,12 @@ p {
 .grid-item-view {
     height: 210px;
     width: 210px;
-    background-color: hsl(228, 28%, 20%);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: hsl(228, 28%, 20%);
 }
 
 .dashboard {
@@ -67,6 +67,31 @@ p {
 .heading > p {
     margin-top: 1px;
     font-weight: bold;
+}
+
+.toggle-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-btn {
+    margin-left: 10px;
+    width: 50px;
+    height: 25px;
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 50px;
+    position: relative;
+}
+
+.inner-circle {
+    width: 20px;
+    height: 22px;
+    border-radius: 50px;
+    background-color: hsl(230, 17%, 14%);
+    position: absolute;
+    top: 2px;
+    left: 2px;
 }
 
 .fb-stats {
@@ -104,7 +129,7 @@ p {
     text-align: center;
 }
 
-.user-followers > p:first-child {
+.stat-numbers {
     color: hsl(0, 0%, 100%);
     font-size: 50px;
     font-weight: 700;
@@ -161,6 +186,36 @@ p {
 .overview-content > p {
     margin: 0;
     font-size: 30px;
-    color: hsl(0, 0%, 100%);
     padding-bottom: 15px;
+}
+
+/* Light Theme CSS */
+
+.background-light {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.background-top-light {
+    background-color: hsl(225, 100%, 98%);
+}
+
+.item-view-light {
+    background-color: hsl(227, 47%, 96%);
+}
+
+.heading-light {
+    color: hsl(230, 17%, 14%);
+}
+
+.item-numbers-light {
+    color: hsl(230, 17%, 14%);
+}
+
+.toggle-btn-light {
+    background: hsl(230, 22%, 74%);
+}
+
+.toggle-slider {
+    left: 28px;
+    background-color: hsl(0, 0%, 100%);
 }
