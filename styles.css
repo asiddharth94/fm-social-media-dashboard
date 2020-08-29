@@ -26,6 +26,31 @@ p {
 
 .background-top {
     position: absolute;
+    background-color: hsl(232, 19%, 15%);
+    width: 100%;
+    height: 225px;
+    z-index: 1;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item-view {
+    height: 210px;
+    width: 210px;
+    background-color: hsl(228, 28%, 20%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    z-index: 2;
 }
 
 .dashboard-header {
@@ -42,23 +67,6 @@ p {
 .heading > p {
     margin-top: 1px;
     font-weight: bold;
-}
-
-.dashboard-stats {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-}
-
-.dashboard-stats-item {
-    height: 210px;
-    width: 210px;
-    background-color: hsl(228, 28%, 20%);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .fb-stats {
@@ -128,4 +136,31 @@ p {
     margin-left: 5px;
     font-size: 12px;
     font-weight: 700;
+}
+
+.overview {
+    margin-top: 25px;
+}
+
+.overview-stats-item {
+    height: 105px;
+}
+
+.stats-item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    color: hsl(0, 0%, 100%);
+}
+
+.overview-content > .user-daily-stats {
+    justify-content: flex-end;
+}
+
+.overview-content > p {
+    margin: 0;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 15px;
 }
